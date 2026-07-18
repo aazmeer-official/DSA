@@ -3,8 +3,8 @@ using namespace std;
 
 void printArr(int *arr, int n){
     for(int i = 0 ; i<n; i++){
-    cout << *arr << "\n";
-    arr = arr + 1;
+    cout << *(arr+i) << "\n";
+    
  }   
 }
 
