@@ -13,6 +13,7 @@ int binSearch(int *arr, int n , int key){
             st = mid + 1;
             // 2nd Half
         } 
+        
         else {
             end = mid - 1;
 
