@@ -8,11 +8,14 @@ void trap (int *heights, int n ){
     leftMax[0] = INT_MIN;
     for (int i = 1; i < n; i++)
     {
-        maximum = max(leftMax[i-1],heights[i-1]);
-        leftMax[i] = maximum;
-        cout << leftMax[i] ;
+        leftMax[i] = max(leftMax[i-1],heights[i-1]);
     }
 
+    int rightMax[20000];
+    rightMax[n-1];
+    for (int i = n ; i < 1; i--){
+        rightMax[i] = max(rightMax[i-1],heights[i-1]);
+    }
     
 } 
 
