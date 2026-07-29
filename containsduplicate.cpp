@@ -20,6 +20,6 @@ bool dupl(int *nums , int n) {
 int main(){
     int nums[] = {1,2,3,4};
     int n = sizeof(nums) / sizeof(int);
-    dupl(nums,n);
+    cout << dupl(nums,n);
     return 0;
 }
