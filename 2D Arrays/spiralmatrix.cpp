@@ -11,7 +11,7 @@ void spiralmatrix(int matrix[][4] , int n , int m) {
     int ecol = m - 1;
 
 
-    while (srow<=erow && scol <= ecol)
+    while (srow<=erow && scol <= ecol )
     {
     
     // FORWARD LOOPS
@@ -31,12 +31,20 @@ void spiralmatrix(int matrix[][4] , int n , int m) {
     for (int j = ecol - 1; j >= scol; j--)
     {
         cout << matrix[erow][j] << " ";
+        if(srow==erow){
+            break;
+        }
     }
     // Left
      for (int i = erow - 1; i >= srow + 1; i--)
      {
         cout << matrix[i][scol] << " ";
-     }
+        if (scol == ecol)
+        {
+            break;
+        }
+        
+    }
      
     srow++; scol++;
     erow--; ecol--;
