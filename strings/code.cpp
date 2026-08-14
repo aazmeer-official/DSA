@@ -4,9 +4,9 @@ using namespace std;
 
 int main()
 {
-    string str1 = "Hello, ";
-    cout << str1 << endl;
-    str1 = "yellow";
-    cout << str1 << endl;
+    string str1;
+    getline(cin, str1);
+    cout << str1[0];
+    cout << str1[1];
     return 0;
 }
